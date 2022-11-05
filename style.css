@@ -1,0 +1,330 @@
+body {
+    background-image: linear-gradient(315deg, rgb(226, 225, 225), rgb(151, 150, 150));
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-between;
+}
+
+/* VIDEO #1*/
+.videoBlockFirst {
+    position: relative;
+}
+.backVf {
+    filter: blur(10px) brightness(70%);
+    position: absolute;
+    box-shadow: 0 0 200px rgba(121, 73, 73, 0.911);
+    width: 100%;
+    margin-top: -25%;
+}
+.frontVf {
+    position: absolute;
+    top: 50px;
+    margin: 0 auto;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to left top,#504f50 10%,  transparent 30%, transparent 70%, #c3c3c4 90%);
+    border-image-slice: 1;
+    box-shadow: 0 0 100px rgba(151, 97, 97, 0.911);
+    width: 50%;
+}
+
+/* VIDEO #2*/
+.videoBlockSecond {
+    position:static;
+
+}
+.backVs {
+    filter: blur(10px) brightness(70%);
+    position: center absolute;
+    width: 100%;
+    margin-top: 100px;
+    box-shadow: 0 0 200px rgba(34, 240, 127, 0.911);    
+}
+.frontVs {
+    position: absolute;
+    top: 1350px;
+    margin: 0 auto;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to left top,#5c5b5b 10%,  transparent 30%, transparent 70%, #b6b7b8 90%);
+    border-image-slice: 1;
+    box-shadow: 0 0 100px rgba(64, 155, 105, 0.911);
+    width: 50%;
+}
+.bottom {
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 1900px;
+}
+.bottom2 {
+    font-family: 'Zilla Slab', serif;
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 1980px;
+}
+.alink {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;    
+}
+.alink:hover {
+    color: rgb(194, 145, 153);
+}
+.linkP {
+    position: absolute;
+    width: 300px;
+    top: 2040px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.linkpic {    
+    color: white;
+    padding: 5px;
+    text-decoration: none;    
+}
+.linkpic:hover {
+    color:rgb(206, 153, 162);
+}
+
+
+/* block Quiz */
+
+form {
+    background-color: rgb(207, 174, 174);  
+    margin-top: 450px;
+    width: auto;
+    /* overflow: hidden; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Zilla Slab', serif;
+    
+}
+h2, h4 {
+    font-family: 'Zilla Slab', serif;
+    align-self: center;
+}    
+label {
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
+.question {
+    /* display: flex;
+    flex-direction: row; */
+    padding: 10px;
+    font-size: 20px;
+}
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6, .btn7 {
+    width: 200px;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: linear-gradient(320deg, pink, grey);
+}
+
+.btn {
+    text-transform: uppercase;
+    width: 100%;
+}
+
+p {
+    padding: 5px;
+    border-radius: 30px;
+    background: linear-gradient(320deg, pink, grey);
+    border: none;
+}
+.btn:hover {
+    font-weight: bolder;
+    font-style: italic;    
+}
+button {
+    border: none;
+    background-color: rgb(207, 174, 174);
+}
+
+#show {
+    margin: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+}
+@media all and (max-width: 1200px) {
+    .bottom {
+        width:800px;
+        font-size: 18px;    
+        top: 2600px;
+    }
+    .bottom2 {
+        width:800px;
+        font-size: 18px;    
+        top: 2660px;
+    }
+    .linkP {    
+        width: 300px;
+        top: 2700px;
+    }
+    .backVs {
+        margin-top: 45px;
+    }
+    .frontVs {
+        top: 2250px;
+        width: 50%;
+        /* display: none; */
+    }
+    form {
+        margin-top: 350px;
+    }
+.question {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        font-size: 20px;
+    } 
+    
+}
+@media all and (max-width: 800px) {
+    .bottom {
+        width:600px;
+        
+        top: 2500px;
+    }
+    .bottom2 {
+        width:600px;
+        
+        top: 2550px;
+    }
+    .linkP {    
+        top: 2580px;
+    }
+    form {
+        margin-top: 300px;
+    }
+    .frontVs {
+        top: 2270px;
+        width: 50%;
+        
+    }
+
+}
+@media all and (max-width: 600px) {
+    .bottom, .bottom2 {
+        width:500px;
+}
+    form {
+        margin-top: 190px;
+}
+.bottom {
+    top: 2440px;
+}
+.bottom2 {
+    top: 2510px;
+}
+.linkP {    
+    top: 2560px;
+}
+.frontVs {
+    top: 2290px;        
+}
+
+}
+@media all and (max-width: 500px) {
+    .frontVs {
+        top: 2450px;        
+    }
+    form {
+        margin-top: 155px;
+    }
+    .bottom {
+        width:340px;
+        font-size: 15px;
+        top: 2570px;
+    }
+    .bottom2 {
+        width:340px;
+        font-size: 15px;
+        top: 2620px;
+    }
+    .linkP {    
+        top: 2650px;
+    }
+}
+
+
+@media all and (max-width: 400px) {
+    .frontVs {
+        top: 2500px;        
+    }
+    form {
+        margin-top: 160px;
+    }
+    .bottom {
+        width:350px;
+        font-size: 15px;
+        top: 2610px;
+    }
+    .bottom2 {
+        width:350px;
+        font-size: 15px;
+        top: 2660px;
+    }
+    .linkP {    
+        top: 2680px;
+    }
+
+}
+@media all and (max-width: 330px) {
+    .frontVs {
+        top: 2600px;        
+    }
+    form {
+        margin-top: 150px;
+    }
+    .bottom {
+        width:310px;
+        font-size: 15px;
+        top: 2690px;
+    }
+    .bottom2 {
+        width:310px;
+        font-size: 15px;
+        top: 2745px;
+    }
+    .linkP {    
+        top: 2775px;
+    }
+
+}
+@media all and (max-width: 300px) {
+    form {
+        margin-top: 150px;
+    }
+    .bottom {
+        width:250px;        
+        top: 2930px;
+        font-size: 12px;
+    }
+    .bottom2 {
+        width:250px;        
+        top: 2990px;
+        font-size: 12px;
+    }
+    .linkP {        
+        width: 270px;
+        top: 3030px;
+    }
+    .frontVs {
+        top: 2850px;        
+    }
+
+}
